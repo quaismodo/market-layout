@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* MAIN */
+
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: inherit;
+    padding: 0;
+    font-weight: normal;
+}
+
+
+/* HEADER ATTENTION */
+
+.header-attention {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .15);
+    backdrop-filter: blur(24px);
+    padding: 8px 0;
+}
+
+.header-attention__text {
+    display: flex;
+    gap: 8px;
+    color: #000;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: -1px;
+
+}
+
+.header-attention__text a {
+    border-bottom: 1px solid;
+    border-color: #000;
+}
+
+/* TOP NAVIGATION */
+
+.top-navigation {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    height: 64px;
+    background-color: #fff;
+    /* position: relative; */
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1584px;
+    width: 100%;
+    padding: 0 24px;
+    margin: auto;
+    height: 100%;
+    position: relative;
+}
+
+.main-nav {
+    height: 100%;
+    position: relative;
+}
+
+.main-menu {
+    display: flex;
+    height: 100%;
+}
+
+.top-level-entry-container {
+    display: flex;
+    align-items: center;
+}
+
+.top-level-entry {
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 1em;
+    transition: .2s;
+    height: 100%;
+    background-color: #fff;
+    /* opacity: 1; */
+}
+
+.top-level-entry:hover {
+    /* opacity: .8; */
+}
+
+.logo {
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    display: flex;
+}
+
+.logo svg {
+    fill-opacity: 1;
+    transition: .2s;
+}
+
+
+.logo:hover svg {
+    fill-opacity: .8;
+}
+
+.profile-nav {
+    right: 0;
+    display: flex;
+    height: 100%;
+}
+
+.profile-nav__link {
+    height: 100%;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+}
